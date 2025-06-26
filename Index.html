@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Krishna,Pragyan,Arun" content="IslingtonProject" />
+    <link rel="shortcut icon"  type="x-icon" href="./images/logo.png">
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Only Prints</title>
+    <style>
+        /* Universal Styles */
+       *{
+           padding: 0px;
+           margin: 0px;
+           box-sizing: border-box;
+           scroll-behavior: smooth;
+       }
+       
+       /* Home Section */
+       section {
+           padding: 60px 14%; /* Padding for all sections */
+       }
+       .home {
+           width: 100%;
+           background-color: rgb(220, 217, 217);
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           gap: 40px; /* Gap between elements */
+       }
+       .home-img {
+           width: 28%;
+           height: auto;
+           margin: 20px auto;
+           box-sizing: border-box;
+       }
+       img {
+           width: 100%;
+           height: 100%;
+       }
+       .home-text h1 {
+           color: #252525;
+           font-size: 65px;
+           font-weight: 600;
+           text-transform: uppercase;
+           line-height: 1;
+           margin: 15px;
+       }
+       .home-btn button {
+           border-radius: 25px;
+           font-size: 20px;
+           width: 200px;
+           height: 30px;
+           outline: none;
+           border: .5px solid;
+           cursor: pointer;
+           margin: 50px 200px;
+       }
+       button:hover {
+           background-color: black;
+           color: white;
+           transition: .5s all ease-in-out;
+       }
+       
+       /* Featured Products Section */
+       .featured-products {
+           background-color: #777474;
+       }
+       .featured-products-text {
+           color: white;
+           text-align: center;
+           font-size: 40px;
+           margin-top: -30px;
+       }
+       .card-container {
+           margin-top: 70px;
+           display: flex;
+           justify-content: start;
+           flex-wrap: wrap;
+           padding: 0px;
+           box-sizing: border-box;
+           column-gap: 40px;
+           row-gap: 20px;
+       }
+       .card {
+           width: 300px;
+           background-color: #dcd9d9;
+           border-radius: 25px;
+           overflow: hidden;
+           justify-content: space-evenly;
+           margin: 30px;
+       }
+       .card img {
+           padding-top: 20px;
+           width: 100%;
+           height: auto;
+       }
+       .card:hover {
+           box-shadow: 30px 30px 3px rgba(91, 91, 91, 0.6);
+           transform: translate(-25px, -15px);
+           transition: transform 1s ease-in-out;
+       }
+       .card-content {
+           padding: 16px;
+       }
+       .card-content h3 {
+           font-size: 28px;
+           margin-bottom: 8px;
+       }
+       .card-content p {
+           color: #0f0b05;
+           font-size: 15px;
+           line-height: 1.3;
+       }
+       .card-content .btn {
+           display: inline-block;
+           padding: 6px 16px;
+           background-color: #6f6960;
+           text-decoration: none;
+           border-radius: 4px;
+           outline: none;
+           cursor: pointer;
+           margin-top: 16px;
+           color: white;
+           margin-left: 80px;
+       }
+       .btn:hover {
+           background-color: white;
+           color: black;
+           transition: .5s all ease-in;
+       }
+       
+       /* Why Choose Us Section */
+       .whyus {
+           background-color: #f5f5f5;
+           padding: 6px;
+           margin-bottom: 50px;
+       }
+       .whyus h2 {
+           text-align: center;
+           font-size: 50px;
+       }
+       .whyus-content {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding-top: 40px;
+           padding-bottom: 4px;
+           text-align: center;
+           gap: 20px;
+       }
+       .whyus-content-card {
+           margin-top: 50px;
+           gap: 10px;
+       }
+       .whyus-content-card img {
+           width: 20%;
+           height: auto;
+       }
+       .whyus-content-card h3 {
+           padding-top: 30px;
+           padding-bottom: 10px;
+       }
+       
+       
+       </style>
+    
+
+</head>
+
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <!-- Top Container -->
+        <div class="top-container">
+            <div class="header-top"> <!-- Banner with logo and brand name -->
+                <img src="images/logo.png">
+                <h1> Only prints </h1>
+            </div>
+            <!-- Header top information -->
+            <div class="banner-top-right">
+                <ul>
+                    <li>Find a Store</li>
+                    <li>Join Us</li>
+                    <li>Customer Service</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="./codes/product.html">Products</a></li>
+                <li><a href="./codes/blog.html">Blog</a></li>
+                <li><a href="./codes/research.html">Research</a></li>
+                <li><a href="./codes/aboutus.html">About Us</a></li>
+            </ul>
+            <!-- Search bar and icons for cart and login -->
+            <div class="searchbar">
+                <div class="search-content">
+                    <input type="text" placeholder="Search Here">
+                    <img class="search" src="./images/searchicon.png" alt="search icon">
+                </div>
+                <div class="icons">
+                    <img class="cart" src="./images/cart.png" alt="cart">
+                    <img src="./images/login.png" alt="logIn">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-text">
+            <h1>Only Prints! <br> <span style="font-size: 45px; word-spacing: 0px; font-weight: 300px; color: #777474; letter-spacing: 0px;">one and only printer hub <br> for you</span></h1>
+            <h4 style="padding-left: 16px; color:rgb(57, 55, 55);">Are you looking for a reliable and <br>affordable printer for your home or office? <br> Do you want to choose from a wide range of brands and models  <br>that suit your needs and budget?<br>
+                If yes, then you should check out Only Prints, the leading printer company in Nepal.</h4>
+            <div class="home-btn">
+                <a href="codes/product.html"><button>Shop Now</button></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <div id="image-slider">
+                <img src="images/p1.png" alt="Img 1">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="featured-products-text">
+            <h1>Our featured Products</h1>
+        </div>
+        <div class="card-container">
+            <!-- Individual Product Cards -->
+            <div class="card">
+                <img src="images\p1.png">
+                <div class="card-content">
+                    <h3>Brother Business Color Laser Printer</h3>
+                    <h5 style="text-decoration: line-through;">$352.99</h5>
+                    <h5>$300.99</h5>
+                    <p>Best seller for Business purpose</p>
+                    <button onclick="myFunction()" class="btn">Add to cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\p7.png" style="padding-top: 40px;" >
+                <div class="card-content">
+                    <h3 style="padding-top: 50px;">HP Laserjet Pro</h3>
+                    <h5 style="text-decoration: line-through;">$200.99</h5>
+                    <h5>$159.99</h5>
+                    <p>Affordable and Good quality printing</p>
+                    <button onclick="myFunction()" class="btn">Add to cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\p4.png" >
+                <div class="card-content">
+                    <h3 style="padding-top: 18px;">Brother HL-L3290CDW Wireless</h3>
+                    <h5 style="text-decoration: line-through;">$352.99</h5>
+                    <h5>$309.99</h5>
+                    <p>Printer for home and office</p>
+                    <button onclick="myFunction()" class="btn">Add to cart</button>
+                </div> 
+            </div>
+            <div class="card">
+                <img src="images\p8.png" style="padding-top: 60px;">
+                <div class="card-content">
+                    <h3 style="padding-top: 40px;">Epson Workforce Pro </h3>
+                    <h5 style="text-decoration: line-through;">$200.99</h5>
+                    <h5>$170.99</h5>
+                    <p>Printer for office nad school</p>
+                    <button onclick="myFunction()" class="btn">Add to cart</button>
+                </div> 
+            </div>
+            <div class="card">
+                <img src="images\p9.png">
+                <div class="card-content">
+                    <h3>Brother MFC-L9610CDN </h3>
+                    <h5 style="text-decoration: line-through;">$999.99</h5>
+                    <h5>$800.99</h5>
+                    <p>Good for cooporatives and business use</p>
+                    <button onclick="myFunction()" class="btn">Add to cart</button>
+                </div> 
+            </div>
+             <div class="card">
+                <img src="images\p6.png" style="padding-top: 40px;">
+                <div class="card-content">
+                    <h3 style="padding-top: 30px;">Brother MFC-J5855DW Color Inkjet All-in-One Printer</h3>
+                    <h5 style="text-decoration: line-through;">$450.99</h5>
+                    <h5>$399.99</h5>
+                    <p>Best seller of 2023 for home and office </p>
+                    <button onclick="myFunction()" class="btn">Add to cart</button>
+                </div>
+             </div> 
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section>
+        <div class="whyus">
+            <h2>Why Choose Us</h2>
+            <div class="whyus-content">
+                <!-- Cards for reasons to choose -->
+                <div class="whyus-content-card">
+                    <img src="images/guarantee-certificate.png">
+                    <h3>Internation Certification</h3>
+                    <p>Warranty for 1 year</p>
+                </div>
+                <div class="whyus-content-card">
+                    <img src="images/payment-protection.png" >
+                    <h3>Secure payments</h3>
+                    <p>Secured and easy online transictions</p>
+                </div>
+                <div class="whyus-content-card">
+                    <img src="images/public-service.png" >
+                    <h3>Good Service Ratings</h3>
+                    <p>High raitings for quality customer support</p>
+                </div>
+                <div class="whyus-content-card" >
+                    <img src="images/parcel.png">
+                    <h3>Free Shipping</h3>
+                    <p>Free shipping all over Nepal <br> with the purchase above $200.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container-main">
+            <div class="footer">
+                <!-- Footer Navigation -->
+                <div class="footer-navigation">
+                    <h3>Navigations</h3>
+                    <a href="#">Home</a><br>
+                    <a href="codes/product.html">Product</a><br>
+                    <a href="codes/blog.html">Blog</a><br>
+                    <a href="codes/research.html">Research</a><br>
+                    <a href="codes/aboutus.html">About us</a>
+                </div>
+                <!-- Footer Find Us -->
+                <div class="footer-findus">
+                    <h3>Our Location</h3>
+                    <a href="https://www.google.com/maps/place/Islington+College/@27.7075719,85.3210752,15.25z/data=!4m14!1m7!3m6!1s0x39eb1908434cb3c5:0x1fdf1a6d41d2512d!2sIslington+College!8m2!3d27.7076565!4d85.3252364!16s%2Fm%2F0wblb79!3m5!1s0x39eb1908434cb3c5:0x1fdf1a6d41d2512d!8m2!3d27.7076565!4d85.3252364!16s%2Fm%2F0wblb79?entry=ttu" target="_blank"><img src="./images/location.png" alt="location"></a>
+                </div>
+                <!-- Footer Social Media -->
+                <div class="footer-socials">
+                    <h3>FOLLOW US ON</h3>
+                    <a href="#"><img src="images/twitter-sign.png"><h3>Twitter</h3></a>
+                    <a href="#"><img src="images/facebook-logo.png"><h3>Facebook</h3></a>
+                    <a href="#"><img src="images/linkedin-logo.png"><h3>Linkdin</h3></a>
+                    <a href="#"><img src="images/youtube.png"><h3>Youtube</h3></a>
+                    <a href="#"><img src="images/whatsapp.png"><h3>Whatsapp</h3></a>
+                    
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <h4>&copy; Onlyprints Co. All Rights Reserved </h4>
+                <h4>Terms of use | privacy policy  </h4>
+                <h4> <img src="images/www-click.png" style="width: 15px; height: auto;" alt="">Global/International</h4>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="Js/script.js"></script>
+    <script>
+        // JavaScript for image slider //
+        var imagePath = ['p5.png', 'p1.png', 'p2.png', 'p3.png', 'p4.png', 'p5.png', 'p6.png', 'p7.png'];
+        var index = 0;
+        var slider = document.getElementById("image-slider");
+        setInterval(slide, 3000);
+
+        function slide() {
+            if (index < imagePath.length) {
+                index = index + 1;
+            } else {
+                index = 1;
+            }
+
+            slider.innerHTML = "<img src=" + imagePath[index - 1] + ">";
+        }
+    </script>
+</body>
+
+</html>

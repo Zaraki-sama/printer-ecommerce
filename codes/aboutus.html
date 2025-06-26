@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Krishna,Pragyan,Arun" content="IslingtonProject" />
+    <link rel="shortcut icon"  type="x-icon" href="../images/logo.png">
+    <meta name="About Us" content="HTML,CSS,Javascript" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--title of the page-->
+    <title>About Us</title>
+
+    <style>
+      /*use of inline css */
+      body {
+        /*to change the background color*/
+        background-color: rgb(220, 217, 217);
+      }
+      /*maintain width and padding of primary about us section*/
+      .about {
+        width: 100%;
+        padding: 78px 0px;
+      }
+      /*for the height with and bored radius of images */
+      .about img {
+        height: auto;
+        width: 420px;
+        border-radius: 50%;
+      }
+      .shadow {
+        box-shadow: 3px 2px 5px;
+      }
+      /*for the text width in about us*/
+      .about-text {
+        width: 550px;
+      }
+      /*for the main div holding the about us content*/
+      .main {
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      /* for heading of image*/
+      .about-text h1 {
+        color: black;
+        font-size: 45px;
+        margin-bottom: 10px;
+      }
+      /* for heading of about us*/
+      .about-text1 h1 {
+        color: black;
+        font-size: 80px;
+        margin-bottom: 10px;
+      }
+      /*for the sub headings*/
+      .about-text h5 {
+        color: black;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+      } /*to select text and change their color to the color below*/
+      span {
+        color: #edc80b;
+      }
+      /*styling and aligning the paragraph*/
+      .about-text p {
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+      }
+      /*co founder button styling*/
+      button {
+        background: grey;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+      }
+      .about-text button:hover{
+        background-color: white;
+        color: black;
+        transition: 1s all ease-in-out;
+        cursor: pointer;
+        border: 2px solid black;
+      }
+      /* adjusting the feedback form*/
+      #form {
+        width: 600px;
+        height: 420px;
+        margin: auto;
+        padding: 20px;
+        background-color: #e8e8e8;
+        border-radius: 4px;
+        font-size: 12px;
+      }
+      /*for the heading alignment*/
+      #form h1 {
+        text-align: center;
+      }
+      /* adjusting and styling the submit button of feedback form*/
+      #form button {
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+        color: #f5f5f5;
+        background-color: rgb(123, 122, 122);
+        border: none;
+        border-radius: 4px;
+      }
+      #form button:hover{
+       
+        color: white;
+        background-color: black;
+        transition: .5s all ease-in-out;
+        cursor: pointer;
+
+      }
+
+      /*aligning the input and label section*/
+      .input-control {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+      }
+      /*structuring and aligning the input secton further*/
+      .input-control input {
+        border-radius: 4px;
+        display: block;
+        font-size: 12px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      /*the blur image in the form background*/
+      .devbg {
+        height: 100%;
+        background-image: url("../images/doodleblur.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      } /*the doodle image within the from*/
+      .devbg2 {
+        background-image: url("../images/od3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /*primary div container of the form for easy alignment*/
+      .formstr {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      /*for about us heading*/
+      /*internal css for initially hiding the modal*/
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 2; /*to make sure the modal is above other elements*/
+      }
+      /*managing the content of the modal*/
+      .modal-content {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+      }
+
+      .modal-content img {
+        width: 100%;
+        height: 100vh;
+      }
+      .resume {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 20px;
+      }
+      .hmod {
+        text-decoration: underline gold;
+      }
+      .section1 {
+        background-color: #6a6a6a;
+      }
+      .section2 {
+        background-color: #d8d8d8;
+      }
+      .section3 {
+        background-color: #636363;
+      }
+      .section4 {
+        background-color: #cbcbcb;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top-container">
+        <div class ="header-top"> <!-- banner with logo and brand name -->
+            <img src="../images/logo.png">
+             <h1> Only prints </h1> 
+        </div>
+        <!-- header top information  -->
+    <div class="banner-top-right">
+        <ul>
+        <li>Find a Store</li>
+        <li>Join Us</li>
+        <li>Customer Service</li>
+        </ul>
+    </div>
+    </div>
+     <!-- navigation bar -->
+    <div class="navbar">
+        <ul class="navlist">
+            <li><a href="../Index.html">Home</a></li>
+            <li><a href="../codes/product.html">Products</a></li>
+            <li><a href="../codes/blog.html">Blog</a></li>
+            <li><a href="../codes/research.html">Research</a></li>
+            <li><a href="../codes/aboutus.html">About Us</a></li>
+        </ul>
+        <!-- searchbar and search icons with cart and login -->
+        <div class="searchbar">
+            <div class="search-content">
+                <input type="text" placeholder="Search Here">
+                <img class="search" src="../images/searchicon.png" alt="search icon">
+            </div> 
+            
+            <div class="icons">
+                <img class="cart" src="../images/cart.png" alt="cart">
+                <img src="../images/login.png " alt="logIn">
+              
+            </div>
+        </div>
+    </div> 
+    </header>
+    <!-- about us containing section to maintain efficiency of page space-->
+    <section class="about section1">
+      <!--main div container of about us-->
+      <div class="main">
+        <!--image link for about us-->
+        <img src="..\images\logo.png" />
+        <!--internal css for the texts-->
+        <div class="about-text1">
+          <!--example of inline css-->
+          <h1>About Us</h1>
+          <!--paragraph for the information-->
+          <p>
+            Only Prints is an e-commerce company that specializes in selling
+            printers. Our mission is to provide our customers with the best
+            quality printers at affordable prices. We believe that everyone
+            should have access to high-quality printing technology, and we
+            strive to make that a reality for our customers. Our team is
+            dedicated to providing excellent customer service and ensuring that
+            our customers are satisfied with their purchases. Thank you for
+            choosing Only Prints!
+          </p>
+        </div>
+        <br />
+      </div>
+    </section>
+    <hr />
+    <!-- about us containing section to maintain efficiency of page space-->
+    <section class="about section2">
+      <!--main div container of about us-->
+      <div class="main">
+        <!--image link for about us-->
+        <img class="shadow" src="..\images\pragyan.png" />
+        <!--internal css for the texts-->
+        <div class="about-text">
+          <!--example of inline css-->
+          <h1 class="hmod">Pragyan Khadka</h1>
+          <!--span tag to make text different color and small heading-->
+          <h5>Developer<span>& Designer</span></h5>
+          <!--paragraph for the information-->
+          <p>
+            Hi, my name is <b>Pragyan Khadka,</b><br /><br />
+            One of the <b>co-developers</b> of this website.
+          </p>
+          <!--button to display the role at a glance-->
+          <button type="button" onclick="openModal('../images/pragyancv.png')">
+            Resume
+          </button>
+        </div>
+        <br />
+      </div>
+    </section>
+
+    <!-- about us containing section to maintain efficiency of page space-->
+    <section class="about section3">
+      <!--main div container of about us-->
+      <div class="main">
+        <!--image link for about us-->
+        <img class="shadow" src="..\images\arun-modified.png" />
+        <!--internal css for the texts-->
+        <div class="about-text">
+          <!--internal css-->
+          <h1 class="hmod">Arun Kumar Shah</h1>
+          <!--span tag to make text different color and small heading-->
+          <h5>Developer<span>& Designer</span></h5>
+          <!--paragraph for the information-->
+          <p>
+            Hi, my name is <b>Arun Kumar Shah,</b><br /><br />
+            One of the <b>co-developers</b> of this website.
+          </p>
+          <!--button to display the role at a glance-->
+          <button type="button" onclick="openModal('../images/aruncv.png')">
+            Resume
+          </button>
+        </div>
+        <br />
+      </div>
+    </section>
+    <hr />
+    <!-- about us containing section to maintain efficiency of page space-->
+    <section class="about section4">
+      <!--main div container of about us-->
+      <div class="main">
+        <!--image link for about us-->
+        <img class="shadow" src="..\images\kkkk-modified.png" />
+        <!--internal css for the texts-->
+        <div class="about-text">
+          <!--internal css-->
+          <h1 class="hmod">Krishna Bhatta</h1>
+          <!--span tag to make text different color and small heading-->
+          <h5>Developer<span>& Designer</span></h5>
+          <!--paragraph for the information-->
+          <p>
+            Hi, my name is <b>Krishna Bhatta,</b><br /><br />
+            One of the <b>co-developers</b> of this website.
+          </p>
+          <!--button to display the role at a glance-->
+          <button type="button" onclick="openModal('../images/krishnacv.png')">
+            Resume
+          </button>
+        </div>
+        <br />
+      </div>
+    </section>
+    <!-- Modal container -->
+    <div class="modal" id="myModal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image" />
+      </div>
+    </div>
+    <hr style="color: gold" />
+    <!--div with internal css for backgorund image-->
+    <div class="devbg">
+      <!-- div for main form-->
+      <div class="formstr">
+        <!--styling the form-->
+        <form
+          id="form"
+          class="devbg2"
+          name="messageForm"
+          onsubmit="validateForm()"
+        >
+          <!--heading of the form-->
+          <h1>Feedback</h1>
+          <!--control the label and input section-->
+          <div class="input-control">
+            <!--label-->
+            <label>UserName: </label>
+            <!--input section-->
+            <input type="text" name="fname" />
+          </div>
+          <!--control the label and input section-->
+          <div class="input-control">
+            <!--label-->
+            <label>Email: </label>
+            <!--input section-->
+            <input type="text" name="email" id="emails" />
+          </div>
+          <!--control the label and input section-->
+          <div class="input-control">
+            <!--label-->
+            <label>Message:</label>
+            <br />
+            <!--Section for typing feedback message-->
+            <textarea
+              rows="10"
+              cols="25"
+              name="message"
+              placeholder="Enter your message"
+            ></textarea>
+            <!--submit button-->
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container-main">
+          <div class="footer">
+           
+              <div class="footer-navigation">
+                  <h3>Navigations</h3>
+                  <a href="../Index.html">Home</a><br>
+                  <a href="../codes/product.html">Product</a><br>
+                  <a href="../codes/blog.html">Blog</a><br>
+                  <a href="#">Research</a><br>
+                  <a href="../codes/aboutus.html">About us</a>
+              </div>
+              <div class="footer-findus">
+                  <h3>Our Location</h3> 
+                  <a href=" https://www.google.com/maps/place/Islington+College/@27.7075719,85.3210752,15.25z/data=!4m14!1m7!3m6!1s0x39eb1908434cb3c5:0x1fdf1a6d41d2512d!2sIslington+College!8m2!3d27.7076565!4d85.3252364!16s%2Fm%2F0wblb79!3m5!1s0x39eb1908434cb3c5:0x1fdf1a6d41d2512d!8m2!3d27.7076565!4d85.3252364!16s%2Fm%2F0wblb79?entry=ttu" target="_blank" ><img src="../images/location.png" alt="location"></a>
+
+              </div>
+
+              <div class="footer-socials">
+                  <h3>FOLLOW US ON</h3>
+                  <a href="#"><img src="../images/twitter-sign.png"><h3>Twitter</h3></a>
+                  <a href="#"><img src="../images/youtube.png"><h3>Youtube</h3></a>
+                  <a href="#"><img src="../images/facebook-logo.png"> <h3>Facebook</h3></a>
+                  <a href="#"><img src="../images/linkedin-logo.png"><h3>LinkdIn</h3></a>
+                  <a href="#"><img src="../images/whatsapp.png"><h3>Whatsapp</h3></a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <h4>&copy; Onlyprints Co. All Rights Reserved </h4> 
+              <h4>Terms of use | privacy policy  </h4>   
+              <h4> <img src="images/www-click.png" style="width: 15px; height: auto;" alt="">Global/International</h4>
+          </div>
+         
+      </div>
+                         
+  </footer>
+  <script src="../Js/script.js"></script>
+    <!--form javascript-->
+    <script type="text/javascript">
+      // Function to open the modal with a specific image source
+      function openModal(imageSrc) {
+        const modal = document.getElementById("myModal");
+        const modalImage = document.getElementById("modalImage");
+
+        modalImage.src = imageSrc; // Set the source of the modal image
+        modal.style.display = "flex"; // Display the modal
+      }
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none"; // Hide the modal
+      }
+
+      // Close the modal when clicking outside of it
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+      /*main js function of form*/
+      function validateForm() {
+        /*variable to store the value*/
+        var firstName = document.forms["messageForm"]["fname"].value;
+        /*variable to store the value*/
+        var emailact = document.getElementById("emails").value;
+        /*regexp to check the exact pattern of email*/
+        var regexp = /^([a-zA-Z0-9]+)@([a-zA-Z0-9]+).([a-z]{2,5})$/;
+        /*variable to store the value*/
+        var messageDetails = document.forms["messageForm"]["message"].value;
+
+        //alert(messageDetails);
+        if (!firstName == "" && !messageDetails == "") {
+          //test function to check if the input and assigned pattern match exactly
+          if (regexp.test(emailact)) {
+            //alert message for success
+            alert("Thank you for your feedback");
+          } else {
+            //alert message for invalid email
+            alert("Insert a valid email address");
+          }
+        } else {
+          //alert message for empty fields
+          alert("Fields Are Empty");
+        }
+      }
+    </script>
+  </body>
+</html>

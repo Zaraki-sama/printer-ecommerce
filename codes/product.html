@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Krishna,Pragyan,Arun" content="IslingtonProject" />
+    <link rel="shortcut icon" type="x-icon" href="../images/logo.png">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Our Products</title>
+    <style>
+        /* Internal CSS */
+body{
+    
+    background-color: #777474;
+}
+.product-top{
+    /* align-items: center; */
+    padding: 5px;
+} 
+.product-top-container{
+    color: white;
+    margin-top: -10px;
+    width: 98%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: start;
+    
+}
+
+.product-top-container img{
+    width: 40%;
+    height: 30%;
+    margin-top: 30px;
+    border-radius:  10px;
+}
+.product-top-container img:hover{
+    box-shadow: 5px 5px 2px rgba(108, 108, 108, 0.9); 
+    transform: translate(0px,-5px) ;
+    transition: transform 1s ease-in-out;
+}
+
+.product-content{
+    margin: 50px;
+}
+
+.product-content h1{
+    margin-bottom: 10px;
+}
+
+.product-content p{
+    margin-bottom: 30px;
+}
+
+
+.product-content a{
+    align-items: center;
+    padding: 13px 30px;
+    text-decoration: none;
+    color: white;
+    background: #262223;
+    font-size: larger;
+}
+.our-product-main{
+    background-color: rgb(220, 217, 217);
+    
+}
+.our-product{
+    text-align: center;
+    font-size: 30px; 
+    padding-top: 40px;
+}
+.card-container{
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 0px;
+    box-sizing: border-box;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.card{
+    width: 300px;
+    height: auto;
+    background-color:white;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: space-around;
+    margin: 40px ;
+         
+}
+.card img{
+    padding-left: 40px;
+    padding-top: 5px;
+    width:90%;
+    align-items: center;
+    height : auto;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px rgba(91, 91, 91, 0.6); 
+    transform: translate(0px,-10px) ;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color:#0f0b05;
+    font-size: 15px;
+    line-height: 1.3; 
+}
+.card-content a{
+    display: inline-block;
+    padding:6px 16px ;
+    background-color: #6f6960;
+    text-decoration: none;  
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+    color: white;
+    margin-left: 80px;
+    border: 1px transparent;
+
+}
+.card-content a:hover{
+    border: 1px solid;
+    background-color: white;
+    color: black;
+    transition: .5s all ease-in;
+
+}
+
+.partners{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 30px;
+}
+.copany-img{
+    width: 50%;
+    align-items: center;
+    margin: 50px 30px;
+
+}
+.company-top{
+    
+    padding: 5px;
+} 
+.company-top-container{
+    color: white;
+    margin-top: -10px;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: start;
+    
+}
+
+.company-top-container img{
+    width: 40%;
+    height: 30%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius:  5px;
+    box-shadow: #262223 3px ;
+}
+
+.company2-top{
+    background-color:rgb(220, 217, 217) ;
+}
+.company2-top-container{
+    color: white;
+    margin-top: -10px;
+    width: 98%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: start;
+    
+}
+
+.company2-top-container img{
+    width: 40%;
+    height: 30%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius:  5px;
+    box-shadow: #262223 3px ;
+}
+
+.product2-content a{
+    align-items: center;
+    padding: 13px 30px;
+    text-decoration: none;
+    color: white;
+    background: #262223;
+    font-size: larger;
+  
+}
+
+
+</style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Top Banner -->
+        <div class="top-container">
+            <!-- Logo and Brand Name -->
+            <div class="header-top">
+                <img src="../images/logo.png">
+                <h1>Only prints</h1>
+            </div>
+            <!-- Header Top Information -->
+            <div class="banner-top-right">
+                <ul>
+                    <li>Find a store</li>
+                    <li>Join Us</li>
+                    <li>Customer Service</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <ul class="navlist">
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="../codes/blog.html">Blog</a></li>
+                <li><a href="../codes/research.html">Research</a></li>
+                <li><a href="../codes/aboutus.html">About Us</a></li>
+            </ul>
+            <!-- Search Bar, Search Icons, Cart, and Login -->
+            <div class="searchbar">
+                <!-- Search Bar -->
+                <div class="search-content">
+                    <input type="text" placeholder="Search Here">
+                    <img class="search" src="../images/searchicon.png" alt="search icon">
+                </div>
+                <!-- Icons -->
+                <div class="icons">
+                    <img class="cart" src="../images/cart.png" alt="cart">
+                    <img src="../images/login.png" alt="logIn">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Product Section -->
+    <div class="product-top">
+        <div class="product-top-container">
+            <!-- Office Image -->
+            <img src="../images/shop.jpeg">
+            <!-- Product Content -->
+            <div class="product-content">
+                <h1 style="font-size: 50px;">Get the best offers for Printer all <span style="color: black;">over Nepal in Only Prints</span></h1>
+                <p>
+                    Whether you need an inkjet, laser, or 3D printers, you can find it at Only Prints. We have printers from top brands like HP, Canon, Epson, Brother, Samsung, and more. You can also find printer accessories like ink cartridges, toner, paper, and cables at Only Prints.
+                </p>
+                <!-- Top Button -->
+                <a href="#">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+    <!-- Our Products Section -->
+    <section>
+        <div class="our-product-main">
+            <div class="our-product">
+                <h1>Our <span style="color: #6f6960;">Products</span></h1>
+            </div>
+            <div class="card-container">
+                <!-- Individual Product Cards -->
+                <div class="card">
+                    <!-- Product Image -->
+                    <img src="../images/p1.png">
+                    <!-- Card Content -->
+                    <div class="card-content">
+                        <h3>Brother Business Color Laser Printer HL-L8360CDW, Wireless Printing</h3>
+                        <h5 style="text-decoration: line-through;">$352.99</h5>
+                        <h5>$300.99</h5>
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/p2.png" style="padding-top: 50px;" >
+                    <div class="card-content">
+                        <h3 style="padding-top: 39px;">Brother HL-L2480DW Wireless Compact </h3>
+                        <h5 style="text-decoration: line-through;">$200.99</h5>
+                        <h5>$159.99</h5>
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div>  
+                 </div>
+                 <div class="card">
+                    <img src="../images/p4.png" style="padding-top: 30px;" >
+                    <div class="card-content">
+                        <h3 style="padding-top: 30px;">Brother HL-L3290CDW Wireless</h3>
+                        <h5 style="text-decoration: line-through;">$352.99</h5>
+                        <h5>$309.99</h5>
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div> 
+                 </div> 
+                 <div class="card">
+                    <img src="../images/p5.png" style="padding-top: 60px;">
+                    <div class="card-content">
+                        <h3 style="padding-top: 70px;">Epson Workforce Pro </h3>
+                        <h5 style="text-decoration: line-through;">$200.99</h5>
+                        <h5>$170.99</h5>
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div>   
+                 </div>
+                 <div class="card">
+                    <img src="../images/p6.png" style="padding-top: 70px;">
+                    <div class="card-content">
+                        <h3>Brother MFC-J6555D All-in-One Printer </h3>
+                        <h5 style="text-decoration: line-through;">$300.99</h5>
+                        <h5>$250.99</h5>
+                        
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div> 
+                 </div>
+                 <div class="card">
+                    <img src="../images/p7.png" style="padding-top: 40px;">
+                    <div class="card-content">
+                        <h3 style="padding-top: 40px;">HP Laserjet Pro Wireless Black & White Printer</h3>
+                        <h5 style="text-decoration: line-through;">$200.99</h5>
+                        <h5>$169.99</h5>
+                      
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="card">
+                    <img src="../images/p8.png" style="padding-top: 40px;">
+                    <div class="card-content">
+                        <h3 style="padding-top: 30px;">Epson Workforce Pro </h3>
+                        <h5 style="text-decoration: line-through;">$250.99</h5>
+                        <h5>$210.99</h5>
+                        
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="card">
+                    <img src="../images/p11.png" style="padding-top: 40px;">
+                    <div class="card-content">
+                        <h3 style="padding-top: 30px;">Brother HL-L3280CDW  Color Printer</h3>
+                        <h5 style="text-decoration: line-through;">$490.99</h5>
+                        <h5>$450.99</h5>
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images\p12.png" style="padding-top: 40px;">
+                    <div class="card-content">
+                        <h3 style="padding-top: 30px;">
+                            HP OfficeJet Pro 8135e Wireless All-in-One  Printer</h3>
+                        <h5 style="text-decoration: line-through;">$480.99</h5>
+                        <h5>$430.99</h5>
+                        <a href="#" onclick="myFunction()">Learn More</a>
+                    </div>
+                 </div>
+                 <div class="card">
+                    <img src="../images/p13.png" style="padding-top: 40px;">
+                    <div class="card-content">
+                        <h3 style="padding-top: 30px;">
+                            Canon PIXMA TR7820 All-in-One Printer</h3>
+                        <h5 style="text-decoration: line-through;">$450.99</h5>
+                        <h5>$399.99</h5>
+                        
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="card">
+                    <img src="../images/p14.png" style="padding-top: 40px;">
+                    <div class="card-content">
+                        <h3 style="padding-top: 30px;">
+                            HP OfficeJet Pro 9125e Wireless All-in-One  Printer</h3>
+                        <h5 style="text-decoration: line-through;">$259.99</h5>
+                        <h5>$3230.99</h5>
+                       
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="card">
+                    <img src="../images/p15.png" style="padding-top: 40px;">
+                    <div class="card-content">
+                        <h3 style="padding-top: 30px;">HP Smart-Tank 7602 Wireless printer</h3>
+                        <h5 style="text-decoration: line-through;">$430.99</h5>
+                        <h5>$399.99</h5>
+                        
+                        <a href="#" onclick="myFunction()">Add to Cart</a>
+                    </div>
+                 </div>
+                
+            </div>
+        </div>  
+    </section>
+
+    <!-- Partners Section -->
+    <section>
+        <div class="partners">
+            Our Partners <span style="color: white;">&</span> Suppliers
+        </div>
+        <!-- Company 1 -->
+        <div class="company-top">
+            <div class="company-top-container">
+                <!-- Company Image -->
+                <img src="../images/brother'sbuilding.jpg">
+                <!-- Product Content -->
+                <div class="product-content">
+                    <h1 style="font-size: 50px;">Brother's Printers</h1>
+                    <p>
+                        Brother is a Japanese company that produces printers, sewing machines, and other electronics. It offers high-quality, low-cost, and wireless printing solutions for home and business use. It has a global presence and a customer support team.
+                    </p>
+                    <a href="https://global.brother/en" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Company 2 -->
+        <div class="company2-top">
+            <div class="company2-top-container">
+                <!-- Company Image -->
+                <img src="../images/hpprinterbuilding.jpg">
+                <!-- Product Content -->
+                <div class="product2-content">
+                    <h1 style="font-size: 50px; color: black;" >HP Printers</h1>
+                    <p style="margin-bottom: 30px; color: black;">
+                        HP printer is a product of HP Inc., an American company that also makes laptops, desktops, and other devices. HP printer offers a variety of models and features for different printing needs, such as inkjet, laser, wireless, and photo printers.
+                    </p>
+                    <a href="https://www.hp.com/us-en/home.html" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container-main">
+            <div class="footer">
+                <!-- Footer Navigation -->
+                <div class="footer-navigation">
+                    <h3>Navigations</h3>
+                    <a href="../Index.html">Home</a><br>
+                    <a href="../codes/product.html">Product</a><br>
+                    <a href="../codes/blog.html">Blog</a><br>
+                    <a href="../codes/research.html">Research</a><br>
+                    <a href="../codes/aboutus.html">About us</a>
+                </div>
+                <!-- Our Location -->
+                <div class="footer-findus">
+                    <h3>Our Location</h3> 
+                    <a href="https://www.google.com/maps/place/Islington+College/@27.7075719,85.3210752,15.25z/data=!4m14!1m7!3m6!1s0x39eb1908434cb3c5:0x1fdf1a6d41d2512d!2sIslington+College!8m2!3d27.7076565!4d85.3252364!16s%2Fm%2F0wblb79!3m5!1s0x39eb1908434cb3c5:0x1fdf1a6d41d2512d!8m2!3d27.7076565!4d85.3252364!16s%2Fm%2F0wblb79?entry=ttu" target="_blank">
+                        <img src="../images/location.png" alt="location">
+                    </a>
+                </div>
+                <!-- Social Media Links -->
+                <div class="footer-socials">
+                    <h3>FOLLOW US ON</h3>
+                    <a href="#"><img src="../images/twitter-sign.png"><h3>Twitter</h3></a>
+                    <a href="#"><img src="../images/facebook-logo.png"><h3>Facebook</h3></a>
+                    <a href="#"><img src="../images/linkedin-logo.png"><h3>Linkdin</h3></a>
+                    <a href="#"><img src="../images/youtube.png"><h3>Youtube</h3></a>
+                    <a href="#"><img src="../images/whatsapp.png"><h3>Whatsapp</h3></a>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <h4>&copy; Onlyprints Co. All Rights Reserved </h4> 
+                <h4>Terms of use | privacy policy  </h4>   
+                <h4> <img src="images/www-click.png" style="width: 15px; height: auto;" alt="">Global/International</h4>
+            </div>
+        </div>
+    </footer>
+    <script src="../Js/script.js"></script>
+    <!-- JavaScript Function -->
+    <script type="text/javascript">
+        function myFunction(){
+            alert("Product Sucessfully added to cart!");
+        }
+    </script>
+</body>
+</html>

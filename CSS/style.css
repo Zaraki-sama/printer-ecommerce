@@ -1,0 +1,241 @@
+@font-face {
+    font-family:myfont;
+    src: url(convergence.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    font-family: myfont;
+} 
+body{
+    background-color: #F5F5F5;
+}
+header{
+ background-color: white;
+ position: sticky;
+ z-index: 2;
+ top: 0px;
+
+}
+
+/* this is the parent code for header top content  */
+.top-container{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    
+}
+
+.header-top {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  
+    text-transform: uppercase;
+    font-size: 10px;
+    margin:0px 10px;
+}
+.header-top img{
+    max-width: 100%;
+    width: 50px;
+    height: auto;
+}
+
+.banner-top-right ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 12px;
+    font-style: bold;
+    padding-right: 50px;
+
+}
+.banner-top-right a{
+    text-decoration: none;
+    color: black;
+}
+/* header top container code ends here  */
+.navbar{
+    display: flex;
+    background-color: black;
+    padding: 10px 0px; 
+
+}
+.navlist {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    
+}
+.navlist  a{
+    margin-left: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-right:10px ;
+    transition: .5s all ease-in-out ; 
+    
+    
+}
+.navlist a:hover{
+    
+    color:white ;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    border-radius: 2px;
+    width: 0%;
+    left: 0px;
+    transition: 1s;
+    bottom: -9.5px;  
+}
+.navlist a:hover:after{
+    width: 100%;
+
+} 
+.searchbar{
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    
+} 
+.searchbar input{
+    width: 350px;
+    height:30px;
+    border: 3px solid transparent;
+    background-color:  #F5F5F5;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    
+}
+.search-content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.search-content img {   
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    height: 20px;
+    width: auto;
+}
+ .icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: start;
+    margin-left: 100px;
+    gap:20px;
+}
+.icons img{
+    
+    gap:10px;
+    height: 25px;
+    width: auto;
+    filter: invert(10);  
+  
+}
+/* footer section  */
+.footer-container-main{
+    color: white;
+    background-color: black;
+    height: 300px;
+    position: relative;
+}
+ 
+
+.footer{
+	margin-bottom: 10px;
+	padding: 10px 15%;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+} 
+
+.footer-navigation h3{
+    padding-bottom: 20px;
+}
+.footer-navigation a{
+    line-height: 10px;
+    text-decoration: none;
+	display:flex ;
+	color: white;
+    font-size: 15px;
+}
+
+.footer-findus img{
+    border-radius:  0px;
+    width: 220px;
+    height: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+} 
+.footer-findus img:hover{
+    box-shadow: 5px 5px 2px rgba(108, 108, 108, 0.9); 
+    transform: translate(0px,-5px) ;
+    transition: transform 1s ease-in-out;
+}
+.footer-socials a{
+    text-decoration: none;
+    display: flex;  
+}
+
+.footer-socials a h3{
+    padding-top: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+.footer-socials img{
+    padding-top: 5px;
+    height: 25px;
+    width: auto;
+    filter: invert(999);  
+    margin-top: 5px;
+    gap: 10px;
+    display: flex;
+    
+}
+
+footer .footer-bottom{ 
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    word-spacing: 2px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.footer-bottom h4{
+    display: flex;
+    align-items: center;
+}
+.footer-about{
+    color: white;
+}
